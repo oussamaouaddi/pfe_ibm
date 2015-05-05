@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="ibm_pfe" match-name="agent"/>
+  <table-filter match-catalog="ibm_pfe" match-name="clients"/>
+  <table-filter match-catalog="ibm_pfe" match-name="credit_immobilier"/>
+  <table-filter match-catalog="ibm_pfe" match-name="direction_bq"/>
+  <table-filter match-catalog="ibm_pfe" match-name="existence"/>
+  <table-filter match-catalog="ibm_pfe" match-name="expert"/>
+  <table-filter match-catalog="ibm_pfe" match-name="langue"/>
+  <table-filter match-catalog="ibm_pfe" match-name="notification"/>
+  <table-filter match-catalog="ibm_pfe" match-name="pays"/>
+  <table-filter match-catalog="ibm_pfe" match-name="role"/>
+  <table-filter match-catalog="ibm_pfe" match-name="type_immeuble"/>
+  <table-filter match-catalog="ibm_pfe" match-name="type_redisence"/>
+  <table-filter match-catalog="ibm_pfe" match-name="ville"/>
+</hibernate-reverse-engineering>

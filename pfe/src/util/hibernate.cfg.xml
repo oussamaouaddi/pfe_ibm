@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ibm_pfe</property>
+                <property name="hibernate.connection.username">root</property>
+              <property name="hibernate.connection.password"></property>
+              <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+              <mapping class="model.Clients" />   
+             <mapping class="model.Role" />   
+             <mapping class="model.Expert" />   
+               <mapping class="model.Ville" /> 
+             <mapping class="model.Pays" />  
+             <mapping class="model.DirectionBq" />   
+               <mapping class="model.Langue" /> 
+             <mapping class="model.Notification" />   
+             <mapping class="model.Expert" />   
+               <mapping class="model.TypeImmeuble" /> 
+             <mapping class="model.TypeResidence" />     
+               <mapping class="model.Existence" />     
+                             <mapping class="model.Agent" /> 
+                             <mapping class="model.CreditImmobilier" />     
+                             
+              
+      
+    </session-factory>
+</hibernate-configuration>

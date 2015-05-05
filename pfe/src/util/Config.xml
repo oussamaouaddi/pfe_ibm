@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="a" class="dao.AgentImp"/>
+		<bean id="c" class="dao.ClientsImp"/>
+		<bean id="cr" class="dao.CreditImmobilierImp"/>
+			<bean id="di" class="dao.DirectionBqImp"/>
+			<bean id="ex" class="dao.ExistenceImp"/>
+				<bean id="exp" class="dao.ExpertImp"/>
+				<bean id="la" class="dao.LangueImp"/>
+					<bean id="no" class="dao.NotificationImp"/>
+						<bean id="pa" class="dao.PaysImp"/>
+							<bean id="ro" class="dao.RoleImp"/>
+								<bean id="t" class="dao.TypeImmeubleImp"/>
+									  <bean id="ty" class="dao.TypeResidenceImp"/>
+									     <bean id="vi" class="dao.VilleImp"/>
+										
+				
+		<bean id="AgentMetier" class="metier.AgentMetier">
+		<property name="daoAgent" ref="a">
+	  </property>
+	</bean>
+	
+		<bean id="ClientsMetier" class="metier.ClientsMetier">
+		<property name="daoClients" ref="c">
+	  </property>
+	</bean>
+	
+	<bean id="CreditImmobilierMetier" class="metier.CreditImmobilierMetier">
+		<property name="daoCreditImmobilier" ref="cr">
+	  </property>
+	</bean>
+	<bean id="DirectionBqMetier" class="metier.DirectionBqMetier">
+		<property name="daoDirectionBq" ref="di">
+	  </property>
+	</bean>
+	<bean id="ExistenceMetier" class="metier.ExistenceMetier">
+		<property name="daoExistence" ref="ex">
+	  </property>
+	</bean>
+	<bean id="ExpertMetier" class="metier.ExpertMetier">
+		<property name="daoExpert" ref="exp">
+	  </property>
+	</bean>
+	<bean id="LangueMetier" class="metier.LangueMetier">
+		<property name="daoLangue" ref="la">
+	  </property>
+	</bean>
+	<bean id="NotificationMetier" class="metier.NotificationMetier">
+		<property name="daoNotification" ref="no">
+	  </property>
+	</bean>
+	<bean id="PaysMetier" class="metier.PaysMetier">
+		<property name="daoPays" ref="pa">
+	  </property>
+	</bean>
+	<bean id="RoleMetier" class="metier.RoleMetier">
+		<property name="daoRole" ref="ro">
+	  </property>
+	</bean>
+	
+	<bean id="TypeImmeubleMetier" class="metier.TypeImmeubleMetier">
+		<property name="daoTypeImmeuble" ref="t">
+	  </property>
+	</bean>
+	<bean id="TypeResidenceMetier" class="metier.TypeResidenceMetier">
+		<property name="daoTypeResidence" ref="ty">
+	  </property>
+	</bean>
+	<bean id="VilleMetier" class="metier.VilleMetier">
+		<property name="daoVille" ref="vi">
+	  </property>
+	</bean>
+</beans>
+
